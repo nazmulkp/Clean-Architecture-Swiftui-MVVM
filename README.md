@@ -92,7 +92,6 @@ The project leverages dependency injection to manage dependencies between layers
 
 ### Example Initialization
 
-**ExampleMVVMApp.swift**:
 ```swift
 import SwiftUI
 

@@ -1,4 +1,4 @@
-# ExampleMVVM: Clean Architecture and SwiftUI Modular Project
+# Clean Architecture and SwiftUI Modular Project
 
 ## Overview
 

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AE1EA94C-1783-4E42-AD00-9DF4F5626186"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CCF9A01-695E-4DCC-96D6-63ECC5F64D54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchWeather(for:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3CCF9A01-695E-4DCC-96D6-63ECC5F64D54 - ee7248352f1302ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExampleMVVM.LocalWeatherDataSource.fetchWeather(for: Swift.String, completion: (Swift.Result&lt;ExampleMVVM.Forecast, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExampleMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Documents/ExampleMVVM/ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "808">
+               </Location>
+               <Location
+                  uuid = "3CCF9A01-695E-4DCC-96D6-63ECC5F64D54 - ee7248352f1302ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExampleMVVM.LocalWeatherDataSource.fetchWeather(for: Swift.String, completion: (Swift.Result&lt;ExampleMVVM.Forecast, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExampleMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Documents/ExampleMVVM/ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "940">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81A105D9-679C-46DB-B156-1FF555EE8B61"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchWeather(for:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "81A105D9-679C-46DB-B156-1FF555EE8B61 - ee7248352f13014a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExampleMVVM.LocalWeatherDataSource.fetchWeather(for: Swift.String, completion: (Swift.Result&lt;ExampleMVVM.Forecast, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExampleMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Documents/ExampleMVVM/ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "860">
+               </Location>
+               <Location
+                  uuid = "81A105D9-679C-46DB-B156-1FF555EE8B61 - ee7248352f130129"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExampleMVVM.LocalWeatherDataSource.fetchWeather(for: Swift.String, completion: (Swift.Result&lt;ExampleMVVM.Forecast, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExampleMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Documents/ExampleMVVM/ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E53461E4-6B82-490C-B609-2267EAC2D53D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchWeather(for:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E53461E4-6B82-490C-B609-2267EAC2D53D - ee7248352f130184"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExampleMVVM.LocalWeatherDataSource.fetchWeather(for: Swift.String, completion: (Swift.Result&lt;ExampleMVVM.Forecast, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExampleMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Documents/ExampleMVVM/ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1232">
+               </Location>
+               <Location
+                  uuid = "E53461E4-6B82-490C-B609-2267EAC2D53D - ee7248352f130184"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExampleMVVM.LocalWeatherDataSource.fetchWeather(for: Swift.String, completion: (Swift.Result&lt;ExampleMVVM.Forecast, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExampleMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookairm1/Documents/ExampleMVVM/ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD363388-EDD8-49DC-8474-63013F8CE9FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleMVVM/Data/Local/LocalWeatherDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchWeather(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A07D8422-4EB0-4DDF-B731-C1B36C544971"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleMVVM/Infrastructure/Utilities/JSONLoader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "loadJSON(filename:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A197BBF-7D4F-4CD6-BDB3-ADFBF8E764D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleMVVM/Infrastructure/Utilities/JSONLoader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "loadJSON(filename:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

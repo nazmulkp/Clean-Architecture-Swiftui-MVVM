@@ -119,3 +119,65 @@ struct ExampleMVVMApp: App {
     }
 }
 ```
+
+# 🚀 Swift: Async/Await vs GCD vs Completion Handler (coming soon)
+
+This guide shows a **side-by-side comparison** of three ways to handle asynchronous tasks in Swift:
+- ✅ Async/Await (Modern Style)
+- ⚠️ GCD (Grand Central Dispatch - Middle Style)
+- ❌ Completion Handler (Old Style)
+
+---
+
+## 🛠 Example Side-by-Side
+
+### 🔸 Completion Handler (Old Style)
+```swift
+func loadData(completion: (String) -> Void) {
+    // Fake network delay
+    completion("Data Loaded")
+}
+
+loadData { result in
+    print(result) // Must write all code here
+}
+```
+
+- ❌ Hard to read if there are many steps
+- ❌ Must pass closures everywhere
+- ❌ Error handling is manual
+
+### 🔸 GCD (Middle Style)
+```swift
+DispatchQueue.global().async {
+    let data = "Data Loaded"
+    DispatchQueue.main.async {
+        print(data) // Switch back to main thread
+    }
+}
+```
+
+- ⚠️ Better but you must manually handle queues
+- ⚠️ Still a bit messy
+- ⚠️ You must remember to come back to the main thread
+
+### 🔸 Async/Await (Modern Style)
+```swift
+func loadData() async -> String {
+    return "Data Loaded"
+}
+
+Task {
+    let data = await loadData()
+    print(data) // Looks like simple step-by-step code
+}
+```
+
+- ✅ Super clean
+- ✅ No need to manage threads
+- ✅ Swift pauses and resumes automatically
+- ✅ Easier error handling with try / catch
+
+<img width="740" alt="Screenshot 2025-06-23 at 11 45 40 PM" src="https://github.com/user-attachments/assets/8b705328-9558-41b7-8dc6-e97d8c6bc67d" />
+
+

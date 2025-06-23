@@ -133,13 +133,28 @@ This guide shows a **side-by-side comparison** of three ways to handle asynchron
 
 ### 🔸 Completion Handler (Old Style)
 ```swift
-func loadData(completion: (String) -> Void) {
-    // Fake network delay
-    completion("Data Loaded")
+func fetchData(completion: @escaping (Result<String, Error>) -> Void) {
+    guard let url = URL(string: "https://example.com") else { return }
+
+    URLSession.shared.dataTask(with: url) { data, response, error in
+        if let error = error {
+            completion(.failure(error))
+            return
+        }
+        
+        guard let data = data, let result = String(data: data, encoding: .utf8) else { return }
+        completion(.success(result))
+    }.resume()
 }
 
-loadData { result in
-    print(result) // Must write all code here
+// Usage
+fetchData { result in
+    switch result {
+    case .success(let data):
+        print("Data: \(data)")
+    case .failure(let error):
+        print("Error: \(error)")
+    }
 }
 ```
 
@@ -149,12 +164,26 @@ loadData { result in
 
 ### 🔸 GCD (Middle Style)
 ```swift
-DispatchQueue.global().async {
-    let data = "Data Loaded"
-    DispatchQueue.main.async {
-        print(data) // Switch back to main thread
+func fetchData() {
+    guard let url = URL(string: "https://example.com") else { return }
+
+    DispatchQueue.global().async {
+        if let data = try? Data(contentsOf: url),
+           let result = String(data: data, encoding: .utf8) {
+
+            DispatchQueue.main.async {
+                print("Data: \(result)")
+            }
+        } else {
+            DispatchQueue.main.async {
+                print("Error fetching data")
+            }
+        }
     }
 }
+
+// Usage
+fetchData()
 ```
 
 - ⚠️ Better but you must manually handle queues
@@ -163,13 +192,23 @@ DispatchQueue.global().async {
 
 ### 🔸 Async/Await (Modern Style)
 ```swift
-func loadData() async -> String {
-    return "Data Loaded"
+func fetchData() async throws -> String {
+    guard let url = URL(string: "https://example.com") else { throw URLError(.badURL) }
+
+    let (data, _) = try await URLSession.shared.data(from: url)
+    guard let result = String(data: data, encoding: .utf8) else { throw URLError(.cannotDecodeContentData) }
+
+    return result
 }
 
+// Usage
 Task {
-    let data = await loadData()
-    print(data) // Looks like simple step-by-step code
+    do {
+        let data = try await fetchData()
+        print("Data: \(data)")
+    } catch {
+        print("Error: \(error)")
+    }
 }
 ```
 
